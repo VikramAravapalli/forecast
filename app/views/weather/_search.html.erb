@@ -1,0 +1,7 @@
+<%= form_with url: weather_forecast_path, method: :get do %>
+  <div class="field">
+    <%= label_tag :zip_code, "Enter zipcode:" %>
+    <%= text_field_tag :zip_code, params[:zip_code] %>
+  </div>
+  <%= submit_tag "Get Forecast" %>
+<% end %>

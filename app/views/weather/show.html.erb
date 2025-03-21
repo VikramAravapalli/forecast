@@ -1,0 +1,18 @@
+<h1> Weather Forecast </h1>
+<%= render :partial => 'search' %>
+
+<% unless @errors.nil? %>
+  <p1><%= @errors.message %></p1>
+<% end %>
+
+<% if @forecast %>
+  <div class="forecast">
+    <h2>Forecast: </h2>
+    <p>Current Temperature: <%= @forecast[:current_temperature] %>°C</p>
+    <p>High: <%= @forecast[:high_temperature] %>°C</p>
+    <p>Low: <%= @forecast[:low_temperature] %>°C</p>
+    <% if @from_cache %>
+      <p style="color:red"><em>Result pulled from cache</em></p>
+    <% end %>
+  </div>
+<% end %>

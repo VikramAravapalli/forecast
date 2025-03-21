@@ -17,6 +17,19 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Use for http calls 
+gem 'httparty'
+
+# Used for redis caching
+gem "redis"
+
+# rspec-rails is a testing framework for Rails 5+.
+gem "rspec-rails"
+gem "rails-controller-testing"
+
+# dotenv helps in storing env variables per environments
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
